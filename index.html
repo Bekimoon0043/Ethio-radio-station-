@@ -161,6 +161,8 @@
         .jfm .station-icon { background: linear-gradient(135deg, #3498db, #2980b9); }
         .ahadu .station-icon { background: linear-gradient(135deg, #e67e22, #d35400); }
         .awash .station-icon { background: linear-gradient(135deg, #1abc9c, #16a085); }
+        .ebc .station-icon { background: linear-gradient(135deg, #f39c12, #e67e22); }
+        .arada .station-icon { background: linear-gradient(135deg, #8e44ad, #9b59b6); }
         
         .station-name {
             font-weight: 600;
@@ -359,7 +361,7 @@
 <body>
     <div class="container">
         <header>
-           
+            <div class="logo">ER</div>
             <h1>Ethiopian Radio Player</h1>
             <p class="subtitle">Listen to your favorite Ethiopian radio stations</p>
         </header>
@@ -430,6 +432,28 @@
                         <div class="station-freq">90.7 FM</div>
                     </div>
                 </button>
+                
+                <!-- New EBC FM Station -->
+                <button class="station-btn ebc" data-url="https://liveonlineradio.net/ebc-fm-addis-971">
+                    <div class="station-icon">
+                        <i class="fas fa-tower-broadcast"></i>
+                    </div>
+                    <div>
+                        <div class="station-name">EBC FM Addis</div>
+                        <div class="station-freq">97.1 FM</div>
+                    </div>
+                </button>
+                
+                <!-- New Arada FM Station -->
+                <button class="station-btn arada" data-url="https://liveonlineradio.net/arada-fm-951">
+                    <div class="station-icon">
+                        <i class="fas fa-compact-disc"></i>
+                    </div>
+                    <div>
+                        <div class="station-name">Arada FM</div>
+                        <div class="station-freq">95.1 FM</div>
+                    </div>
+                </button>
             </div>
         </div>
         
@@ -466,7 +490,7 @@
         </div>
         
         <footer>
-            <p>Enjoy the rich culture and music of Ethiopia | & copy; 2023 Ethiopian Radio Player developed by BM</p>
+            <p>Enjoy the rich culture and music of Ethiopia | &copy; 2023 Ethiopian Radio Player developed by BM</p>
         </footer>
     </div>
     
@@ -513,6 +537,20 @@
                     name: "Awash FM",
                     url: "https://liveonlineradio.net/awash-907-fm",
                     freq: "90.7 FM",
+                    location: "Addis Ababa"
+                },
+                // New EBC FM station data
+                {
+                    name: "EBC FM Addis",
+                    url: "https://liveonlineradio.net/ebc-fm-addis-971",
+                    freq: "97.1 FM",
+                    location: "Addis Ababa"
+                },
+                // New Arada FM station data
+                {
+                    name: "Arada FM",
+                    url: "https://liveonlineradio.net/arada-fm-951",
+                    freq: "95.1 FM",
                     location: "Addis Ababa"
                 }
             ];
@@ -567,7 +605,4 @@
         });
     </script>
 </body>
-
 </html>
-
-
